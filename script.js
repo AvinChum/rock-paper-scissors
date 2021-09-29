@@ -2,7 +2,7 @@ let playerScore = 0;
 let computerScore = 0;
 let round = 0;
 
-// 
+
 function computerPlay() {
     let computerPick = Math.floor(Math.random()* 3) + 1;
 
@@ -20,12 +20,13 @@ function computerPlay() {
             break;
     }
 }
-
+// user selection. i will need to come back inorder to change the case sensitivity. 
 function userPlay(){
     let userPick = prompt("Please choose you weapon. ")
     return userPick
 }
-
+// will need to find a way to correct this function in case the user inputs an invalid choice without using
+// a turn in the game() function.
  function playRound (playerSelection, computerSelection) {
      computerSelection = computerPlay();
      playerSelection = userPlay();
