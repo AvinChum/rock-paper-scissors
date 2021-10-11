@@ -4,21 +4,15 @@ let computerScore = 0;
 
 function computerPlay() {
     let computerPick = Math.floor(Math.random()* 3) + 1;
-
-    switch(computerPick) {
-        case computerPick = 1:
-            return "rock";
-            break;
-
-        case computerPick = 2:
-            return "paper";
-            break;
-
-        case computerPick = 3:
-            return "scissors";
-            break;
+    if (computerPick === 1) {
+        return "rock"
+    }else if (computerPick === 2) {
+        return "paper"
+    }else {
+        return "scissors"
     }
 }
+
 function userPlay(){
     let userPick = prompt("Please choose either rock, paper or scissors. ").toLowerCase();
     return userPick
@@ -67,4 +61,4 @@ function game () {
         console.log(round)  
         }
 }
-game()
+
